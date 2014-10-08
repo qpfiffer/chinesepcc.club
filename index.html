@@ -8,26 +8,86 @@
 		<style>
 			html {
 				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+				font-size: 18px;
 			}
 			body {
-				width: 700px;
-				display: block;
 				margin: 0 auto;
 			}
+			header {
+				position: absolute;
+				display: block;
+				width: 250px;
+				height: 90%;
+				border-right: 1px solid #efefef;
+			}
+			header ul {
+				list-style-type: none;
+			}
+			header ul li {
+				margin-bottom: 1em;
+			}
+			section {
+				margin-left: 260px;
+				margin-bottom: 6em;
+			}
+			#title {
+				margin-bottom: 4em;
+			}
 			.bold {
+				font-weight: bold;
 			}
 		</style>
 	</head>
 	<body>
-		<div>
+		<header>
+			<ul>
+				<li><a href="#title">Top</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#when">When</a></li>
+				<li><a href="#where">Where</a></li>
+				<li><a href="#faq">FAQ</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</header>
+		<section id="title">
 			<h1>Chinese PCC Club</h1>
-			<p></p>
-		</div>
-		<div>
-			<h2>Time & Place</h2>
-			<p><span class="bold">10:00AM - Noon</span>, Every Friday, PCC Cascade Campus "The ASPCC Underground"</p>
-		</div>
-		<div>
-			<h2>
+			<p>We are PCC's 中文 club.</p>
+		</section>
+		<section id="about">
+			<h2>About</h2>
+			<p>Lorem ipsum.</p>
+		</section>
+		<section id="when">
+			<h2>When</h2>
+			<p>We meet <span class="bold">every friday</span> from <span class="bold">10:00AM - Noon</span>.</p>
+		</section>
+		<section id="where">
+			<h2>Where</h2>
+			<pre>
+Cascade Campus
+705 N. Killingsworth St.
+Portland, OR 97217
+			</pre>
+			<p>PCC's <a href="http://www.pcc.edu/about/locations/cascade/">Cascade Campus.</a> We meet in the ASPCC underground, below the cafeteria on the east side of the building.</p>
+			<p>Directions: <a href="https://www.google.com/maps/place/Portland+Community+College+-+Cascade+Campus/@45.5631305,-122.6744585,17z/data=!4m5!1m2!2m1!1sCascade+Campus+705+N.+Killingsworth+St.+Portland,+OR+97217!3m1!1s0x5495a70e8d78a485:0xc7f53c48cb1f28c1">Google Maps</a> or 
+			<a href="http://osm.org/go/WIDwW6sSb--?layers=N">Open Streetmaps</a></p>
+		</section>
+		<section id="faq">
+			<h2>Frequently Asked Questions</h2>
+			<ul>
+				<li>
+					<p>怎麼版？</p>
+					<p>因為我不知道寫什麼。</p>
+				</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<p>We're available by phone and email, anytime:<p>
+			<ul>
+				<li><a href="mailto://spencer.swearingen@pcc.edu">spencer.swearingen@pcc.edu</a></li>
+				<li><a href="mailto://quinlan.pfiffer@pcc.edu">quinlan.pfiffer@pcc.edu</a></li>
+			</ul>
+		</section>
 	</body>
 </html>
