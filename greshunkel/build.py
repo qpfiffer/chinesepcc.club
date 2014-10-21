@@ -212,7 +212,7 @@ def main(context):
     from greshunkel.context import DEFAULT_LANGUAGE
     context['DEFAULT_LANGUAGE'] = DEFAULT_LANGUAGE
     all_templates = []
-    required_dirs = ['./built']
+    required_dirs = ['./built', './built/blog']
 
     for dirn in required_dirs:
         if not path.exists(dirn):
@@ -240,8 +240,13 @@ def main(context):
                     }
 
     for base_file in tree:
-        print "Rendering {}".format(base_file)
         _render_file(tree[base_file], context)
+
+    for post in context['POSTS']:
+        # UGLY HACK YOU DUMB SHIT
+        context['dumb_meta'] = [post]
+        post_meta = parse_file(context, BLOGPOST_FILE)
+        _render_file(post_meta, context, output_filename="blog/" + post['built_filename'])
 
     # BeCaUsE WhY NoT
     return 0

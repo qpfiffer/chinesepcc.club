@@ -1,0 +1,23 @@
+xXx PARENT=templates/blog_base.html xXx
+xXx TITLE xXx
+    xXx LOOP post_meta dumb_meta xXx
+        xXx post_meta$title xXx
+    xXx BBL xXx
+xXx TTYL xXx
+xXx CONTENT xXx
+<div class="blog_container">
+    xXx LOOP post_meta dumb_meta xXx
+    <div class="grid grid-pad">
+        <div class="col-1-1">
+            <div class="language-bash content">
+                <h2 class="post_title">xXx post_meta$title xXx</h2>
+                <p>
+                    <span class="author_name">xXx post_meta$date xXx by xXx post_meta$author xXx</span>
+                </p>
+                xXx post_meta$content xXx
+            </div>
+        </div>
+    </div>
+    xXx BBL xXx
+</div>
+xXx TTYL xXx

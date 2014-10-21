@@ -33,7 +33,11 @@ section {
 .important {
 	color: #ff4742;
 }
-.tx {
+.tx,.blog_ref {
 	margin-bottom: 2em;
 	display: block;
+}
+.author_name {
+	font-size: 14px;
+	color: #777;
 }

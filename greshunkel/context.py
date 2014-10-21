@@ -9,69 +9,6 @@ DEFAULT_LANGUAGE = "en"
 # Question: Hey qpfiffer, why is this indented all weird?
 # Man I don't know leave me alone.
 BASE_CONTEXT = {
-    "PROJECTS": [
-        {
-            "title": "OlegDB",
-            "description": "The ugly duckling database of champions.",
-            "link": "https://olegdb.org"
-        },
-        {
-            "title": "logpurge",
-            "description": "Logarhythmically purge backup files in order of importance. More recent and importan files are kept in closed intervals, while older files are removed.",
-            "link": "https://github.com/nijotz/logpurge"
-        },
-        {
-            "title": "GRESHUNKEL",
-            "description": "The static site generator that built this and the OlegDB website. Written in python with much leering and hatred.",
-            "link": "https://github.com/infoforcefeed/OlegDB-Website/tree/master/greshunkel"
-        },
-        {
-            "title": "shitstream",
-            "description": "Radio music service and streaming written entirely in bash.",
-            "link": "https://github.com/nijotz/shitstream"
-        },
-        {
-            "title": "Goat Tower",
-            "description": "Ambitious and horrifying MUD.",
-            "link": "https://github.com/infoforcefeed/goat-tower"
-        },
-        {
-            "title": "tenyks",
-            "description": "Pluggable, extensible, concurrent multi-threaded IRC bot.",
-            "link": "https://github.com/kyleterry/tenyks"
-        },
-        {
-            "title": "#metaforcefeed",
-            "description": "reddit-esque task-tracker. Designed to test OlegDB as a backend.",
-            "link": "http://meta.infoforcefeed.org/"
-        },
-        {
-            "title": "Entropy Meter",
-            "description": "An entropy meter that measures Jira chaos via the Dashing web framework. Built in Ruby for some reason.",
-            "link": "https://github.com/nijotz/entropy-meter"
-        }
-    ],
-    "TALKS": [
-        {
-            "title": "Shitstream Presentation",
-            "description": "Ad-hoc presentation nijotz gave on his <a href=\"/projects.html\">shitstream</a> project. Link is to full talk, 114MB.",
-            "img": "./static/img/nick_shitstream_preview.jpg",
-            "talk_link": "./static/vid/nick_shitstream_2014-05-24.webm"
-        },
-        {
-            "title": "Golang General",
-            "description": "Semi-prepared talk on Go, go-routines and interesting finds while porting tenyks. Vid is ~200MB.",
-            "img": "./static/img/kyles_go_talk.jpg",
-            "talk_link": "./static/vid/kyles_go_talk_2014_07_05.webm"
-        }
-    ],
-    "ABOUTS": [
-        "#infoforcefeed is on irc.freenode.net. Come join us.",
-        "You know suckless? Well we essentially suckmore sometimes.",
-        "We all like to code and we each have our favorite languages, but Python and C seem to be the most popular among the group.",
-        "We have dreams of a crypto-anarchist-potato-tomato farm.",
-        "This \"about\" is a bullet point list that even YOU can contribute to. JUST GRESHUNKEL IT."
-    ]
 }
 
 def build_blog_context(default_context):
